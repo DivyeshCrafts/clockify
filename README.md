@@ -2,16 +2,7 @@
 
 ## Description
 Briefly describe your API. For example:
-"This is a REST API for managing a clockify app, allowing users to perform CRUD operations on todo, login, and register, "
-
----
-
-## Table of Contents
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Running the API](#running-the-api)
-- [API Endpoints](#api-endpoints)
-- [License](#license)
+"This is a REST API for managing a clockify app, allowing users to perform CRUD operations on todo, login, and register, a;sp i upload postman file"
 
 ---
 
