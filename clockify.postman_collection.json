@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "6cb82d2a-5f8b-49ee-8f25-1f772dec201e",
+		"name": "clockify",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29967091"
+	},
+	"item": [
+		{
+			"name": "web_api",
+			"item": [
+				{
+					"name": "v1",
+					"item": [
+						{
+							"name": "portal",
+							"item": [
+								{
+									"name": "user",
+									"item": [
+										{
+											"name": "register",
+											"request": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"useremail\": \"divyesh101@gmail.com\",\r\n    \"username\": \"divyesh\",\r\n    \"password\": \"divyesh007\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "http://localhost:8000/webapi/v1/portal/register",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "8000",
+													"path": [
+														"webapi",
+														"v1",
+														"portal",
+														"register"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "login",
+											"request": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"useremail\": \"divyesh101@gmail.com\",\r\n    \"password\": \"divyesh007\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "http://localhost:8000/webapi/v1/portal/login",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "8000",
+													"path": [
+														"webapi",
+														"v1",
+														"portal",
+														"login"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "To do",
+									"item": [
+										{
+											"name": "create_todo/ edit",
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "authorization",
+														"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IiIsIlVzZXJEYXRhIjp7Il9pZCI6IjY3NjMwMTFmMmQ5MDBmZjgzOTRiNmEwNiIsInVzZXJlbWFpbCI6ImRpdnllc2gxMDFAZ21haWwuY29tIiwidXNlcm5hbWUiOiJkaXZ5ZXNoIiwicGFzc3dvcmQiOiIkMmEkMTAkVlJIenlTRHFSbExOdzcxUjZKSHBsLlJhSWQ5ZzBING8wZC8veFlTN2x1YUxCdzQyb2cuUG0iLCJfX3YiOjB9LCJpYXQiOjE3MzQ1NDE5NDZ9.mboVgzUHKY7NbokMLfwURuQLhkfuyx12RCk1_c2bt-E",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"_id\": \"67630838475e6867fb2077a3\",\r\n    \"user_id\": \"6763011f2d900ff8394b6a06\",\r\n    \"title\": \"ride bike\",\r\n    \"dueDate\": \"1734629186\",\r\n    \"description\": \"\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "http://localhost:8000/webapi/v1/portal/create_todo_or_edit",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "8000",
+													"path": [
+														"webapi",
+														"v1",
+														"portal",
+														"create_todo_or_edit"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "todo history daywise",
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "authorization",
+														"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IiIsIlVzZXJEYXRhIjp7Il9pZCI6IjY3NjMwMTFmMmQ5MDBmZjgzOTRiNmEwNiIsInVzZXJlbWFpbCI6ImRpdnllc2gxMDFAZ21haWwuY29tIiwidXNlcm5hbWUiOiJkaXZ5ZXNoIiwicGFzc3dvcmQiOiIkMmEkMTAkVlJIenlTRHFSbExOdzcxUjZKSHBsLlJhSWQ5ZzBING8wZC8veFlTN2x1YUxCdzQyb2cuUG0iLCJfX3YiOjB9LCJpYXQiOjE3MzQ1NDE5NDZ9.mboVgzUHKY7NbokMLfwURuQLhkfuyx12RCk1_c2bt-E",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"dueDate\": \"1734543417\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "http://localhost:8000/webapi/v1/portal/user_todo_history_daywise",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "8000",
+													"path": [
+														"webapi",
+														"v1",
+														"portal",
+														"user_todo_history_daywise"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "todo daywise",
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "authorization",
+														"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IiIsIlVzZXJEYXRhIjp7Il9pZCI6IjY3NjMwMTFmMmQ5MDBmZjgzOTRiNmEwNiIsInVzZXJlbWFpbCI6ImRpdnllc2gxMDFAZ21haWwuY29tIiwidXNlcm5hbWUiOiJkaXZ5ZXNoIiwicGFzc3dvcmQiOiIkMmEkMTAkVlJIenlTRHFSbExOdzcxUjZKSHBsLlJhSWQ5ZzBING8wZC8veFlTN2x1YUxCdzQyb2cuUG0iLCJfX3YiOjB9LCJpYXQiOjE3MzQ1NDE5NDZ9.mboVgzUHKY7NbokMLfwURuQLhkfuyx12RCk1_c2bt-E",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"dueDate\": \"1734543417\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "http://localhost:8000/webapi/v1/portal/todo_daywise",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "8000",
+													"path": [
+														"webapi",
+														"v1",
+														"portal",
+														"todo_daywise"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
