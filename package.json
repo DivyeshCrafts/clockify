@@ -1,0 +1,22 @@
+{
+  "name": "clockify",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "cron": "^3.3.1",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.1",
+    "nodemailer": "^6.9.16",
+    "nodemon": "^3.1.9",
+    "validatorjs": "^3.22.1"
+  }
+}
